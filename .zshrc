@@ -2,8 +2,8 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/jash_maester/.oh-my-zsh"
-export PATH="$PATH:/home/jash_maester/flutter/bin"
+export ZSH="$HOME/.oh-my-zsh"
+export PATH="$PATH:$HOME/flutter/bin"
 export JAVA_HOME="/usr/lib/jvm/java-11-amazon-corretto/"
 export PATH="$PATH:$JAVA_HOME/bin"
 export PATH="$PATH:$HOME/.cargo/bin"
@@ -116,7 +116,6 @@ alias youtube='tizonia --youtube-audio-search'
 
 alias update='sudo pacman -Syu'
 alias install='sudo pacman -Su'
-#alias wake_jash_server='wakeonlan BC:5F:F4:D9:C3:18'
 #alias remove='sudo apt remove'
 #alias autoremove='sudo apt autoremove'
 alias ssh-chat='cd ~/Downloads/ssh-chat/ && sudo ./ssh-chat --bind ":22" --verbose --identity ~/.ssh/id_rsa'
