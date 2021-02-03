@@ -1,0 +1,6 @@
+terminal
+low_speed
+killall
+reboot
+xev
+high_speed

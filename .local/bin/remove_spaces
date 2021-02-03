@@ -1,0 +1,5 @@
+#!/bin/bash
+echo 'Removing all Files and Folders having spaces in their names recursively...'
+find . -depth -name '* *' \
+| while IFS= read -r f ; do mv -i "$f" "$(dirname "$f")/$(basename "$f"|tr ' ' _)" ; done
+echo 'DONE...'

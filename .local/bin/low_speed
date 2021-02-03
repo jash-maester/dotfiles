@@ -1,0 +1,6 @@
+#!/bin/sh
+
+sudo asus-fan-control set-temps 60 65 70 75 79 85 90 95
+echo Fan-speed Set to minimum configuration
+echo Current fant speeds
+sudo asus-fan-control get-temps
