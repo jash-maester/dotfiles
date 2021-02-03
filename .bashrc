@@ -123,25 +123,3 @@ export PATH="$PATH:$HOME/flutter/bin"
 export ELECTRON_TRASH=gio
 
 ###########################################################################################
-
-alias youtube='tizonia --youtube-audio-search'
-alias update='sudo apt update'
-alias upgrade='sudo apt upgrade'
-alias install='sudo apt install'
-alias wake_jash_server='wakeonlan BC:5F:F4:D9:C3:18'
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/jash_maester/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/jash_maester/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/jash_maester/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/jash_maester/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-
