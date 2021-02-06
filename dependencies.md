@@ -31,3 +31,4 @@
     [] jq
     [] alsa-utils
     [] youtube-dl
+    [] mcmojave-circle - https://www.gnome-look.org/p/1305429/
