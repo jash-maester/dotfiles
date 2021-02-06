@@ -38,9 +38,6 @@ bindsym $mod+Shift+q kill
 # start program launcher
 bindsym $mod+d exec --no-startup-id /usr/bin/dmenu_run
 
-# launch categorized menu
-#bindsym $mod+z exec --no-startup-id morc_menu
-
 ################################################################################################
 ## sound-section - DO NOT EDIT if you wish to automatically upgrade Alsa -> Pulseaudio later! ##
 ################################################################################################
@@ -63,19 +60,15 @@ bindsym XF86AudioPrev exec playerctl previous && sleep 2 && dunstify "`playerctl
 #bindsym $mod+F1 exec firefox
 bindsym $mod+F2 exec firefox
 bindsym $mod+F3 exec nautilus
-# bindsym $mod+F3 exec ranger
 bindsym $mod+Shift+F3 exec pcmanfm_pkexec
-#bindsym $mod+F5 exec terminal -e 'mocp'
 bindsym $mod+F4 exec "sleep 60; .config/i3/scripts/thunderbird.sh"
 bindsym $mod+F5 exec $terminal -e 'cmus'
 bindsym $mod+y exec yt
-#bindsym $mod+t exec --no-startup-id pkill picom
-#bindsym $mod+Ctrl+t exec --no-startup-id picom -b
 bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
 bindsym Print exec --no-startup-id i3-scrot
 bindsym $mod+Print --release exec --no-startup-id i3-scrot -w
 bindsym $mod+Shift+Print --release exec --no-startup-id i3-scrot -s
-bindsym $mod+Shift+h exec xdg-open /usr/share/doc/manjaro/i3_help.pdf
+#bindsym $mod+Shift+h exec xdg-open .config/i3/i3_help.pdf
 bindsym $mod+Shift+x --release exec --no-startup-id xkill
 
 focus_follows_mouse no
@@ -295,19 +288,12 @@ exec optimus-manager-qt
 exec --no-startup-id numlockx on
 exec_always --no-startup-id libinput-gestures -v -c .config/libinput-gestures.conf
 exec --no-startup-id caffeine-indicator
-#exec --no-startup-id sleep 5; pulseaudio -k && pulseaudio --start
 exec_always --no-startup-id nm-applet
 exec_always --no-startup-id /usr/bin/dunst
 exec_always --no-startup-id pamac-tray
 exec --no-startup-id clipit
-# exec --no-startup-id blueman-applet
-# exec_always --no-startup-id sbxkb
-#exec_always --no-startup-id start_conky_maia
 exec_always --no-startup-id conky
-# exec --no-startup-id start_conky_green
 exec --no-startup-id xautolock -time 15 -locker blurlock
-exec_always --no-startup-id ff-theme-util
-exec_always --no-startup-id fix_xcursor
 exec "sleep 10; thunderbird-beta"
 #exec discord --start-minimized
 exec --no-startup-id pasystray
