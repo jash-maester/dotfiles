@@ -69,8 +69,8 @@ bindsym $mod+Shift+F3 exec pcmanfm_pkexec
 bindsym $mod+F4 exec "sleep 60; .config/i3/scripts/thunderbird.sh"
 bindsym $mod+F5 exec $terminal -e 'cmus'
 bindsym $mod+y exec yt
-bindsym $mod+t exec --no-startup-id pkill picom
-bindsym $mod+Ctrl+t exec --no-startup-id picom -b
+#bindsym $mod+t exec --no-startup-id pkill picom
+#bindsym $mod+Ctrl+t exec --no-startup-id picom -b
 bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
 bindsym Print exec --no-startup-id i3-scrot
 bindsym $mod+Print --release exec --no-startup-id i3-scrot -w
@@ -289,9 +289,9 @@ bindsym $mod+9 exec --no-startup-id blurlock
 
 # Autostart applications
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-exec_always --no-startup-id nitrogen --restore; sleep 1; picom -b
+exec_always --no-startup-id nitrogen --restore; sleep 5; picom -b --experimental-backend
 exec_always --no-startup-id autotiling
-#exec optimus-manager-qt
+exec optimus-manager-qt
 exec --no-startup-id numlockx on
 exec_always --no-startup-id libinput-gestures -v -c .config/libinput-gestures.conf
 exec --no-startup-id caffeine-indicator
