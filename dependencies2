@@ -35,6 +35,7 @@ git
 rust
 bat
 exa
+jq
 dmenu_jash (https://github.com/jash-maester/dmenu_jash)
 xorg-xinit
 Dmenu NOT WORKING
