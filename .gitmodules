@@ -7,3 +7,6 @@
 [submodule ".themes/Nordic-Polar"]
 	path = .themes/Nordic-Polar
 	url = https://github.com/EliverLara/Nordic-Polar
+[submodule ".themes/Dracula"]
+	path = .themes/Dracula
+	url = https://github.com/dracula/gtk
