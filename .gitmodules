@@ -4,3 +4,6 @@
 [submodule ".oh-my-zsh/custom/plugins/zsh-syntax-highlighting"]
 	path = .oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 	url = https://github.com/zsh-users/zsh-syntax-highlighting
+[submodule ".themes/Nordic-Polar"]
+	path = .themes/Nordic-Polar
+	url = https://github.com/EliverLara/Nordic-Polar
