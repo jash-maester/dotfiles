@@ -1,0 +1,3 @@
+#! /bin/bash
+
+sensors | awk -F' ' '/cpu_fan/ {print $2}'

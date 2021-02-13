@@ -1,0 +1,23 @@
+#!/bin/sh
+time=3000
+
+while getopts min:sec:hr:h: flag
+do
+    case "${flag}" in
+        min) time=expr ${OPTARG} * 60;;
+        sec) time=${OPTARG};;
+        hr) time=${OPTARG} * 3600;;
+        h) echo "Usage: ./pomodoro [option] [value]
+                 Options:
+                  -min : For value in minutes.
+                  -sec : For value in seconds.
+                  -hr  : For values in hours.
+                  -h   : To display this menu." && exit ;;
+
+    esac
+done
+
+printf "Pomodoro timer started for %dsec\n" "$time"
+sleep $time
+notify-send "Pomodoro Timer: Session Complete. Take some rest."
+printf "Timer complete.\n"
